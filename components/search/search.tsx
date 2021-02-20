@@ -41,6 +41,8 @@ const Search = () => {
 				`}
 				onSubmit={(event) => {
 					event.preventDefault();
+					setCursor('');
+					setDirection(SearchDirection.NEXT);
 					setSearchTerm(inputValue);
 					mutate();
 					resultsRef.current?.scrollIntoView();
