@@ -1,13 +1,14 @@
-import Head from "next/head";
+import Head from '../components/head';
+import Page from '../components/page';
+import Type, { Types } from '../components/type';
 
 const Home = () => (
-  <>
-    <Head>
-      <title>Hello world</title>
-      <link rel="icon" href="/favicon.png" />
-    </Head>
-    Hello world
-  </>
+	<>
+		<Head />
+		<Page>
+			<Type type={Types.P}>Hello world</Type>
+		</Page>
+	</>
 );
 
 export default Home;
