@@ -38,6 +38,11 @@ const Search = () => {
 					margin: 100px auto 50px;
 					max-width: 712px;
 					padding: 3.8vw 6.25vw;
+
+					@media screen and (max-width: 650px) {
+						flex-wrap: wrap;
+						justify-content: center;
+					}
 				`}
 				onSubmit={(event) => {
 					event.preventDefault();
@@ -55,6 +60,10 @@ const Search = () => {
 						font-size: 1em;
 						padding: 16px 20px 15px;
 						width: 67%;
+
+						@media screen and (max-width: 650px) {
+							width: 100%;
+						}
 					`}
 					onChange={(event) => setInputValue(event.target.value)}
 					placeholder="Search for Github users..."
@@ -72,6 +81,10 @@ const Search = () => {
 						font-weight: 600;
 						padding: 14px 48px;
 						transition: color 0.25s ease, background-color 0.25s ease;
+
+						@media screen and (max-width: 650px) {
+							margin-top: 1em;
+						}
 
 						&:hover {
 							background-color: ${Colors.MEDIUM_RED};

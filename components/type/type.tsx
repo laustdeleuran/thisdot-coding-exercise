@@ -19,12 +19,20 @@ const styles = {
 		line-height: 1.2em;
 		font-weight: 600;
 		margin-bottom: 0.6em;
+
+		@media screen and (max-width: 500px) {
+			font-size: ${Sizes.SUBHEADER};
+		}
 	`,
 	[Types.P]: css`
 		color: ${Colors.LIGHT_BLUE};
 		font-size: ${Sizes.BODY};
 		line-height: 1.54em;
 		margin-bottom: 1em;
+
+		@media screen and (max-width: 500px) {
+			font-size: 1rem;
+		}
 	`,
 	[Types.SUBHEADER]: css`
 		color: ${Colors.OFF_WHITE};
@@ -33,6 +41,10 @@ const styles = {
 		line-height: 1.2em;
 		font-weight: 600;
 		margin-bottom: 0.6em;
+
+		@media screen and (max-width: 500px) {
+			font-size: ${Sizes.BODY};
+		}
 	`,
 };
 

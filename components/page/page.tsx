@@ -52,6 +52,11 @@ const Page: FunctionComponent = ({ children }) => (
 				${containerStyles}
 				margin-top: 120px;
 				margin-bottom: 120px;
+
+				@media screen and (max-width: 500px) {
+					margin-top: 60px;
+					margin-bottom: 60px;
+				}
 			`}
 		>
 			{children}

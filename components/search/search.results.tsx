@@ -50,6 +50,10 @@ const SearchResults = ({ data }: { data: SearchRes }) => (
 								overflow: hidden;
 								padding: 50px 12px;
 								width: 15em;
+
+								@media screen and (max-width: 400px) {
+									width: calc(100vw - 48px);
+								}
 							`}
 						>
 							<img

@@ -24,6 +24,7 @@ const GlobalStyles = () => (
 				color: ${Colors.OFF_WHITE};
 				font-family: Montserrat, sans-serif;
 				font-weight: 400;
+				min-width: 300px;
 			}
 
 			a {
