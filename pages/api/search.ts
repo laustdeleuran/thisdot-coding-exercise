@@ -1,8 +1,6 @@
 import { NextApiHandler } from 'next';
 import { SearchDirection } from '../../settings/search';
 
-const GITHUB_PERSONAL_ACCESS_TOKEN = '180dc080215f5e003170a9eb5de91968ac4624e7';
-
 /**
  * Fetch options
  * @src https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
@@ -10,7 +8,7 @@ const GITHUB_PERSONAL_ACCESS_TOKEN = '180dc080215f5e003170a9eb5de91968ac4624e7';
 const options = {
 	method: 'POST',
 	headers: {
-		Authorization: `bearer ${GITHUB_PERSONAL_ACCESS_TOKEN}`,
+		Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
 		'Content-Type': 'application/json',
 	},
 };
