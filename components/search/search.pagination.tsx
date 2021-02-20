@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
-import { FunctionComponent } from 'react';
 import Colors from '../../settings/colors';
+import { FunctionComponent } from 'react';
+import { css } from '@emotion/react';
 
 const styleLink = css`
 	margin: 0 1em;
@@ -14,6 +14,9 @@ const styleLinkDisabled = css`
 	opacity: 0.5;
 `;
 
+/**
+ * @main
+ */
 const SearchPagination: FunctionComponent<{
 	hasNext: boolean;
 	hasPrev: boolean;

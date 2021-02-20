@@ -5,6 +5,9 @@ import Search from '../components/search/search';
 import Type, { Types } from '../components/type/type';
 import { css } from '@emotion/react';
 
+/**
+ * @main
+ */
 const Home = () => (
 	<>
 		<Head />

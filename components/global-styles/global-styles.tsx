@@ -2,6 +2,10 @@ import Colors from '../../settings/colors';
 import emotionReset from 'emotion-reset';
 import { Global, css } from '@emotion/react';
 
+/**
+ * @main
+ * Global base styles and CSS reset.
+ */
 const GlobalStyles = () => (
 	<Global
 		styles={css`

@@ -1,3 +1,7 @@
+/**
+ * @typedef
+ * Search results definition
+ */
 export type SearchResults = {
 	users: {
 		node: {
@@ -13,10 +17,10 @@ export type SearchResults = {
 			id: string;
 			login: string;
 			name?: string;
-			repositories: {
+			repositories?: {
 				totalCount: number;
 			};
-			starredRepositories: {
+			starredRepositories?: {
 				totalCount: number;
 			};
 			url: string;

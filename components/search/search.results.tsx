@@ -1,10 +1,10 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
 import Colors from '../../settings/colors';
 import Type, { Types } from '../type/type';
 import { SearchResults as SearchRes } from './types';
+import { css } from '@emotion/react';
 
-const SPECIAL_SOMEONE = 'laustdeleuran';
+const SPECIAL_SOMEONE = 'laustdeleuran'; // I wonder who this could be?
 
 const statStyles = css`
 	display: inline;
@@ -18,6 +18,9 @@ const statStyles = css`
 	}
 `;
 
+/**
+ * @main
+ */
 const SearchResults = ({ data }: { data: SearchRes }) => (
 	<div>
 		<div

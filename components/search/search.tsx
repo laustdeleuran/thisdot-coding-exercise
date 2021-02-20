@@ -1,15 +1,18 @@
 /** @jsxImportSource @emotion/react */
 import Colors from '../../settings/colors';
+import SearchPagination from './search.pagination';
 import SearchResults from './search.results';
+import Type from '../type/type';
 import useSWR from 'swr';
 import { SearchDirection } from '../../settings/search';
 import { SearchResults as SearchRes } from './types';
 import { css } from '@emotion/react';
 import { fetcher } from '../../utils/fetcher';
 import { useRef, useState } from 'react';
-import SearchPagination from './search.pagination';
-import Type from '../type/type';
 
+/**
+ * @main
+ */
 const Search = () => {
 	const resultsRef = useRef(null);
 	const [inputValue, setInputValue] = useState<string>('');

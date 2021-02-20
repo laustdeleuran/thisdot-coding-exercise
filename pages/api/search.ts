@@ -17,6 +17,7 @@ const options = {
  * Query
  * @src https://docs.github.com/en/graphql/overview/explorer
  * @src https://graphql.org/learn/pagination/
+ * @src https://stackoverflow.com/a/52608910
  */
 const query = (q: string, d: SearchDirection, c?: string): string => `{
 	search(query: "${q}", ${d}: 6, ${
@@ -46,6 +47,7 @@ const query = (q: string, d: SearchDirection, c?: string): string => `{
 }`;
 
 /**
+ * @main
  * API handler
  */
 const search: NextApiHandler = async (req, res) => {

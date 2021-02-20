@@ -1,3 +1,6 @@
+/**
+ * ThisDot brand colors
+ */
 enum Colors {
 	DARK_BLUE = '#0a1930',
 	LIGHT_BLUE = '#a2b4cf',

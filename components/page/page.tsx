@@ -1,8 +1,8 @@
 /** @jsxImportSource @emotion/react */
-import { css } from '@emotion/react';
-import { FunctionComponent } from 'react';
 import Colors from '../../settings/colors';
 import Sizes from '../../settings/sizes';
+import { FunctionComponent } from 'react';
+import { css } from '@emotion/react';
 
 const containerStyles = css`
 	margin-left: auto;
@@ -12,6 +12,10 @@ const containerStyles = css`
 	padding-right: 24px;
 `;
 
+/**
+ * @main
+ * Basic page layout container
+ */
 const Page: FunctionComponent = ({ children }) => (
 	<>
 		<header

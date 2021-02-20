@@ -5,12 +5,18 @@ import { FunctionComponent } from 'react';
 import Colors from '../../settings/colors';
 import Sizes from '../../settings/sizes';
 
+/**
+ * Typography 'types'
+ */
 export enum Types {
 	HEADER = 'h1',
 	P = 'p',
 	SUBHEADER = 'h2',
 }
 
+/**
+ * Typography styles based on `Types`
+ */
 const styles = {
 	[Types.HEADER]: css`
 		color: ${Colors.OFF_WHITE};
@@ -31,7 +37,7 @@ const styles = {
 		margin-bottom: 1em;
 
 		@media screen and (max-width: 500px) {
-			font-size: 1rem;
+			font-size: ${Sizes.BASE};
 		}
 	`,
 	[Types.SUBHEADER]: css`
@@ -48,6 +54,11 @@ const styles = {
 	`,
 };
 
+/**
+ * @main
+ * Set up each individual type and use dot notation to make them all available
+ * on default element.
+ */
 const P = styled.p`
 	${styles[Types.P]}
 `;
@@ -64,7 +75,7 @@ type TypeCollection = StyledComponent<any, any, any> & {
 	Subheader?: StyledComponent<any, any, any>;
 };
 
-const Type: TypeCollection = P;
+const Type: TypeCollection = P; // Default element
 Type.Header = Header;
 Type.P = P;
 Type.Subheader = Subheader;
