@@ -11,7 +11,7 @@ Quick solution for the [coding exercise provided by This Dot Labs](./SOW.md). Ke
 - [SWR](https://swr.vercel.app/)
 - [Github GraphQL API](https://docs.github.com/en/graphql)
 
-It's basically a quick search interface mocked up with React and Emotion that calls an Next.JS API handler, that then does the GraphQL API call. I wrapped it in a Next.JS API handler since it conveniently solves two issues: any potential CORS is done away with and any secret tokens can be kept secret (if it wasn't for this repo).
+It's basically a quick search interface mocked up with React and Emotion that calls a Next.JS API handler, that then does the GraphQL API call. I wrapped it in a Next.JS API handler since it conveniently solves two issues: any potential CORS is done away with and any secret tokens can be kept secret (if it wasn't for this repo).
 
 Potential improvements if I had more time:
 
