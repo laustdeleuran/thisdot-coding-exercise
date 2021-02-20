@@ -1,6 +1,21 @@
 # Coding Exercise for This Dot
 
-TBD
+Quick solution for the [coding exercise provided by This Dot Labs](./SOW.md). Key components:
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org/)
+- [Emotion](https://emotion.sh/)
+- [Next.JS](https://nextjs.org/)
+- [SWR](https://swr.vercel.app/)
+- [Github GraphQL API](https://docs.github.com/en/graphql)
+
+It's basically a quick search interface mocked up with React and Emotion that calls an Next.JS API handler, that then does the GraphQL API call. I wrapped it in a Next.JS API handler since it conveniently solves two issues: any potential CORS is done away with and any secret tokens can be kept secret (if it wasn't for this repo).
+
+Potential improvements if I had more time:
+
+- Search as you type.
+- Avoid results list flickering in and out when loading the next page.
+- Add current search parameters to browser URI so that search results can be referenced and shared.
 
 ---
 
