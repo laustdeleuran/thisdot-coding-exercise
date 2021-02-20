@@ -1,5 +1,7 @@
 # Coding Exercise for This Dot
 
+[Visit site →](https://thisdot-coding-exercise.vercel.app/)
+
 Quick solution for the [coding exercise provided by This Dot Labs](./SOW.md). Key components:
 
 - [TypeScript](https://www.typescriptlang.org/)
